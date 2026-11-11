@@ -153,6 +153,8 @@ h1{font-size:calc(var(--u)*3.4);font-weight:800;letter-spacing:-.02em;line-heigh
 .tools{margin-top:calc(var(--u)*2);flex-wrap:wrap;gap:10px}
 
 /* 인용 */
+.pic .body{display:flex;align-items:center;justify-content:center;margin-top:0}
+.pic .body img{max-width:100%;max-height:calc(var(--u)*44);border-radius:calc(var(--u)*1.4);box-shadow:0 calc(var(--u)*.6) calc(var(--u)*2.4) rgba(20,24,40,.18)}
 .quote .body{grid-template-columns:2.3fr 1fr}
 .quote .say{background:var(--grad);color:#fff;display:flex;flex-direction:column;justify-content:center;padding:calc(var(--u)*4)}
 .quote .say .mk{font-size:calc(var(--u)*6);font-weight:800;line-height:.6;height:calc(var(--u)*3)}
@@ -371,6 +373,15 @@ details.ans p{white-space:pre-line;margin-top:8px;font-size:15px;line-height:1.7
       </div>
     </div>
     <div class="foot"><span></span><span>하이러닝 AI 서논술형 평가</span></div>
+  </section>
+
+  <!-- 연수 종료 시각 -->
+  <section class="slide pic" aria-label="연수 종료 시각: 오후 4시 10분, 10분 전 알림 오후 4시">
+    <div class="top"><span></span><img class="logo" src="assets/img/logo.png" alt=""></div>
+    <div class="body">
+      <img src="assets/img/alarm.jpg" alt="휴대폰 알람 화면. 연수 종료 10분 전 오후 4:00, 연수 종료 오후 4:10 (11월 11일 수요일)">
+    </div>
+    <div class="foot"><span class="no"></span><span>하이러닝 AI 서논술형 평가</span></div>
   </section>
 
   <!-- 도입 -->
@@ -970,7 +981,7 @@ const CONFIG = {
   links: {
     platform: "https://hi.goe.go.kr",     // AI 교수·학습 플랫폼
     essay: "https://hiai.goe.go.kr",      // AI 서·논술형 평가지원시스템
-    padlet: "https://padlet.com/seongchant00/ai-4w7tujgoyfoflwzh",  // 가이드 PDF 모음. 비워 두면 카드를 숨깁니다
+    padlet: "https://padlet.com/seongchant00/ai-s025cnv17gxney1rq2ev",  // 가이드 PDF 모음. 비워 두면 카드를 숨깁니다
     // 전체 공개한 실습용 평가계획의 [평가계획 복사] 주소 (평가 자료실 → 전체 평가계획 → 상세보기 → 평가계획 복사)
     planCopy: "https://hiai.goe.go.kr/teachers/project-templates/create?base=Nan2xgNzhEm5iuabqWIY-A"
   },
